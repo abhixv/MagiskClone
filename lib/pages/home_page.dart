@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:magisk/utils/routes.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -21,9 +22,14 @@ class _HomePageState extends State<HomePage> {
         actions: [
           Padding(
             padding: const EdgeInsets.all(12.0),
-            child: Icon(
-              Icons.settings,
-              color: Colors.white,
+            child: InkWell(
+              onTap: () {
+                Navigator.pushNamed(context, MyRoutes.settingRoute);
+              },
+              child: Icon(
+                Icons.settings,
+                color: Colors.white,
+              ),
             ),
           ),
         ],
@@ -38,7 +44,7 @@ class _HomePageState extends State<HomePage> {
                 height: 15,
               ),
               Container(
-                height: MediaQuery.of(context).size.height * 0.2,
+                height: MediaQuery.of(context).size.height * 0.178,
                 width: MediaQuery.of(context).size.width * 0.9,
                 decoration: BoxDecoration(
                   color: Colors.grey.shade900,
@@ -52,7 +58,7 @@ class _HomePageState extends State<HomePage> {
                         Padding(
                           padding: EdgeInsets.all(16.0),
                           child: Container(
-                            height: 40,
+                            height: 35,
                             width: 35,
                             child: ColorFiltered(
                               colorFilter: ColorFilter.mode(
@@ -189,7 +195,7 @@ class _HomePageState extends State<HomePage> {
                 height: 15,
               ),
               Container(
-                height: MediaQuery.of(context).size.height * 0.2,
+                height: MediaQuery.of(context).size.height * 0.178,
                 width: MediaQuery.of(context).size.width * 0.9,
                 decoration: BoxDecoration(
                   color: Colors.grey.shade900,
@@ -306,7 +312,7 @@ class _HomePageState extends State<HomePage> {
               ),
               Container(
                 alignment: Alignment.center,
-                height: MediaQuery.of(context).size.height * 0.06,
+                height: MediaQuery.of(context).size.height * 0.05,
                 width: MediaQuery.of(context).size.width * 0.9,
                 decoration: BoxDecoration(
                   color: Colors.grey.shade900,
@@ -315,9 +321,7 @@ class _HomePageState extends State<HomePage> {
                   borderRadius: BorderRadius.circular(10.0),
                 ),
                 child: InkWell(
-                  onTap: () {
-                    debugPrint("hellp");
-                  },
+                  onTap: () {},
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -341,7 +345,7 @@ class _HomePageState extends State<HomePage> {
                 height: 15,
               ),
               Container(
-                height: MediaQuery.of(context).size.height * 0.5,
+                height: MediaQuery.of(context).size.height * 0.33,
                 width: MediaQuery.of(context).size.width * 0.9,
                 decoration: BoxDecoration(
                   color: Colors.grey.shade900,
