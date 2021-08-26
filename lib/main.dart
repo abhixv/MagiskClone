@@ -3,6 +3,7 @@ import 'dart:ffi';
 import 'package:flutter/material.dart';
 import 'package:magisk/pages/home_page.dart';
 import 'package:magisk/pages/setting_page.dart';
+import 'package:magisk/utils/routes.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,6 +17,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.grey, fontFamily: 'Avenir'),
       home: SettingPage(),
+      routes: {
+        "/": (context) => HomePage(),
+        MyRoutes.settingRoute: (context) => SettingPage(),
+      },
     );
   }
 }
