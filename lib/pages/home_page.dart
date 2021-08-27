@@ -12,13 +12,16 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Theme.of(context).backgroundColor,
       appBar: AppBar(
         title: Text(
           "Home",
-          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+          style: TextStyle(
+              color: Theme.of(context).accentColor,
+              fontWeight: FontWeight.bold,
+              fontFamily: 'Avenir'),
         ),
-        backgroundColor: Colors.grey.shade900,
+        backgroundColor: Theme.of(context).backgroundColor,
         actions: [
           Padding(
             padding: const EdgeInsets.all(12.0),
@@ -28,7 +31,7 @@ class _HomePageState extends State<HomePage> {
               },
               child: Icon(
                 Icons.settings,
-                color: Colors.white,
+                color: Theme.of(context).accentColor,
               ),
             ),
           ),
@@ -47,7 +50,7 @@ class _HomePageState extends State<HomePage> {
                 height: MediaQuery.of(context).size.height * 0.178,
                 width: MediaQuery.of(context).size.width * 0.9,
                 decoration: BoxDecoration(
-                  color: Colors.grey.shade900,
+                  color: Theme.of(context).cardColor,
                   borderRadius: BorderRadius.circular(10.0),
                 ),
                 child: Column(
@@ -75,7 +78,8 @@ class _HomePageState extends State<HomePage> {
                           style: TextStyle(
                               color: Colors.blue,
                               fontWeight: FontWeight.bold,
-                              fontSize: 25),
+                              fontSize: 25,
+                              fontFamily: 'Avenir'),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(16.0),
@@ -92,9 +96,9 @@ class _HomePageState extends State<HomePage> {
                               Text(
                                 "Install",
                                 style: TextStyle(
-                                  color: Colors.blue,
-                                  fontSize: 18,
-                                ),
+                                    color: Colors.blue,
+                                    fontSize: 18,
+                                    fontFamily: 'Avenir'),
                               )
                             ],
                           ),
@@ -112,22 +116,30 @@ class _HomePageState extends State<HomePage> {
                                 children: [
                                   Text(
                                     "Latest ",
-                                    style: TextStyle(color: Colors.grey),
+                                    style: TextStyle(
+                                        color: Colors.grey,
+                                        fontFamily: 'Avenir'),
                                   ),
                                   Text(
                                     "23.0 (23000)",
-                                    style: TextStyle(color: Colors.white),
+                                    style: TextStyle(
+                                        color: Theme.of(context).accentColor,
+                                        fontFamily: 'Avenir'),
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(left: 40),
                                     child: Text(
                                       "A/B ",
-                                      style: TextStyle(color: Colors.grey),
+                                      style: TextStyle(
+                                          color: Colors.grey,
+                                          fontFamily: 'Avenir'),
                                     ),
                                   ),
                                   Text(
                                     "No",
-                                    style: TextStyle(color: Colors.white),
+                                    style: TextStyle(
+                                        color: Theme.of(context).accentColor,
+                                        fontFamily: 'Avenir'),
                                   ),
                                 ],
                               ),
@@ -135,11 +147,15 @@ class _HomePageState extends State<HomePage> {
                                 children: [
                                   Text(
                                     "Installed ",
-                                    style: TextStyle(color: Colors.grey),
+                                    style: TextStyle(
+                                        color: Colors.grey,
+                                        fontFamily: 'Avenir'),
                                   ),
                                   Text(
                                     "N/A",
-                                    style: TextStyle(color: Colors.white),
+                                    style: TextStyle(
+                                        color: Theme.of(context).accentColor,
+                                        fontFamily: 'Avenir'),
                                   ),
                                   SizedBox(
                                     width: 32,
@@ -148,12 +164,16 @@ class _HomePageState extends State<HomePage> {
                                     padding: const EdgeInsets.only(left: 40),
                                     child: Text(
                                       "SAR ",
-                                      style: TextStyle(color: Colors.grey),
+                                      style: TextStyle(
+                                          color: Colors.grey,
+                                          fontFamily: 'Avenir'),
                                     ),
                                   ),
                                   Text(
                                     "Yes",
-                                    style: TextStyle(color: Colors.white),
+                                    style: TextStyle(
+                                        color: Theme.of(context).accentColor,
+                                        fontFamily: 'Avenir'),
                                   ),
                                 ],
                               ),
@@ -161,11 +181,15 @@ class _HomePageState extends State<HomePage> {
                                 children: [
                                   Text(
                                     "Ramdisk ",
-                                    style: TextStyle(color: Colors.grey),
+                                    style: TextStyle(
+                                        color: Colors.grey,
+                                        fontFamily: 'Avenir'),
                                   ),
                                   Text(
                                     "No",
-                                    style: TextStyle(color: Colors.white),
+                                    style: TextStyle(
+                                        color: Theme.of(context).accentColor,
+                                        fontFamily: 'Avenir'),
                                   ),
                                   SizedBox(
                                     width: 20,
@@ -174,12 +198,16 @@ class _HomePageState extends State<HomePage> {
                                     padding: const EdgeInsets.only(left: 40),
                                     child: Text(
                                       "Crypto ",
-                                      style: TextStyle(color: Colors.grey),
+                                      style: TextStyle(
+                                          color: Colors.grey,
+                                          fontFamily: 'Avenir'),
                                     ),
                                   ),
                                   Text(
                                     "File",
-                                    style: TextStyle(color: Colors.white),
+                                    style: TextStyle(
+                                        color: Theme.of(context).accentColor,
+                                        fontFamily: 'Avenir'),
                                   ),
                                 ],
                               ),
@@ -198,7 +226,7 @@ class _HomePageState extends State<HomePage> {
                 height: MediaQuery.of(context).size.height * 0.178,
                 width: MediaQuery.of(context).size.width * 0.9,
                 decoration: BoxDecoration(
-                  color: Colors.grey.shade900,
+                  color: Theme.of(context).cardColor,
                   borderRadius: BorderRadius.circular(10.0),
                 ),
                 child: Column(
@@ -226,7 +254,8 @@ class _HomePageState extends State<HomePage> {
                           style: TextStyle(
                               color: Colors.blue,
                               fontWeight: FontWeight.bold,
-                              fontSize: 25),
+                              fontSize: 25,
+                              fontFamily: 'Avenir'),
                         ),
                         Padding(
                           padding: const EdgeInsets.all(16.0),
@@ -243,6 +272,7 @@ class _HomePageState extends State<HomePage> {
                               Text(
                                 "Install",
                                 style: TextStyle(
+                                  fontFamily: 'Avenir',
                                   color: Colors.blue,
                                   fontSize: 18,
                                 ),
@@ -264,11 +294,15 @@ class _HomePageState extends State<HomePage> {
                                 children: [
                                   Text(
                                     "Latest ",
-                                    style: TextStyle(color: Colors.grey),
+                                    style: TextStyle(
+                                        color: Colors.grey,
+                                        fontFamily: 'Avenir'),
                                   ),
                                   Text(
                                     "8.0.0 (23000)",
-                                    style: TextStyle(color: Colors.white),
+                                    style: TextStyle(
+                                        color: Theme.of(context).accentColor,
+                                        fontFamily: 'Avenir'),
                                   ),
                                 ],
                               ),
@@ -276,11 +310,15 @@ class _HomePageState extends State<HomePage> {
                                 children: [
                                   Text(
                                     "Installed ",
-                                    style: TextStyle(color: Colors.grey),
+                                    style: TextStyle(
+                                        color: Colors.grey,
+                                        fontFamily: 'Avenir'),
                                   ),
                                   Text(
                                     "8.0.0 (23000)",
-                                    style: TextStyle(color: Colors.white),
+                                    style: TextStyle(
+                                        color: Theme.of(context).accentColor,
+                                        fontFamily: 'Avenir'),
                                   ),
                                 ],
                               ),
@@ -288,11 +326,15 @@ class _HomePageState extends State<HomePage> {
                                 children: [
                                   Text(
                                     "Package ",
-                                    style: TextStyle(color: Colors.grey),
+                                    style: TextStyle(
+                                        color: Colors.grey,
+                                        fontFamily: 'Avenir'),
                                   ),
                                   Text(
                                     "com.topjohnwu.magisk",
-                                    style: TextStyle(color: Colors.white),
+                                    style: TextStyle(
+                                        color: Theme.of(context).accentColor,
+                                        fontFamily: 'Avenir'),
                                   ),
                                   SizedBox(
                                     width: 20,
@@ -315,7 +357,7 @@ class _HomePageState extends State<HomePage> {
                 height: MediaQuery.of(context).size.height * 0.05,
                 width: MediaQuery.of(context).size.width * 0.9,
                 decoration: BoxDecoration(
-                  color: Colors.grey.shade900,
+                  color: Theme.of(context).cardColor,
                   border: Border.all(
                       color: Colors.blue, style: BorderStyle.solid, width: 1.1),
                   borderRadius: BorderRadius.circular(10.0),
@@ -336,7 +378,10 @@ class _HomePageState extends State<HomePage> {
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
                           "Check SafetyNet",
-                          style: TextStyle(color: Colors.blue, fontSize: 15),
+                          style: TextStyle(
+                              color: Colors.blue,
+                              fontSize: 15,
+                              fontFamily: 'Avenir'),
                         ),
                       ),
                     ],
@@ -350,7 +395,7 @@ class _HomePageState extends State<HomePage> {
                 height: MediaQuery.of(context).size.height * 0.33,
                 width: MediaQuery.of(context).size.width * 0.9,
                 decoration: BoxDecoration(
-                  color: Colors.grey.shade900,
+                  color: Theme.of(context).cardColor,
                   borderRadius: BorderRadius.circular(10.0),
                 ),
                 child: Padding(
@@ -361,16 +406,18 @@ class _HomePageState extends State<HomePage> {
                       Text(
                         "Support Us",
                         style: TextStyle(
-                            color: Colors.white,
+                            color: Theme.of(context).accentColor,
                             fontWeight: FontWeight.bold,
-                            fontSize: 22),
+                            fontSize: 22,
+                            fontFamily: 'Avenir'),
                       ),
                       Text(
                         "Magisk is, and always will be, free and opensource.\nYou can however show us that you care by sending a small donation",
                         style: TextStyle(
                             color: Colors.grey,
                             fontWeight: FontWeight.bold,
-                            fontSize: 12),
+                            fontSize: 12,
+                            fontFamily: 'Avenir'),
                       ),
                       SizedBox(
                         height: 20,
@@ -378,9 +425,10 @@ class _HomePageState extends State<HomePage> {
                       Text(
                         "@topjohnwu",
                         style: TextStyle(
-                            color: Colors.white,
+                            color: Theme.of(context).accentColor,
                             fontWeight: FontWeight.bold,
-                            fontSize: 14),
+                            fontSize: 14,
+                            fontFamily: 'Avenir'),
                       ),
                       SizedBox(
                         height: 50,
@@ -388,9 +436,10 @@ class _HomePageState extends State<HomePage> {
                       Text(
                         "@diareuse",
                         style: TextStyle(
-                            color: Colors.white,
+                            color: Theme.of(context).accentColor,
                             fontWeight: FontWeight.bold,
-                            fontSize: 14),
+                            fontSize: 14,
+                            fontFamily: 'Avenir'),
                       ),
                       SizedBox(
                         height: 20,
@@ -402,9 +451,10 @@ class _HomePageState extends State<HomePage> {
                           child: Text(
                             "By @abhixv",
                             style: TextStyle(
-                                color: Colors.white,
+                                color: Theme.of(context).accentColor,
                                 fontWeight: FontWeight.bold,
-                                fontSize: 20),
+                                fontSize: 20,
+                                fontFamily: 'Avenir'),
                           ),
                         ),
                       ),

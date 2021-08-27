@@ -5,6 +5,7 @@ import 'package:magisk/pages/home_page.dart';
 import 'package:magisk/pages/setting_page.dart';
 import 'package:magisk/pages/status_page.dart';
 import 'package:magisk/utils/routes.dart';
+import 'package:magisk/utils/themes.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +17,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.grey, fontFamily: 'Avenir'),
+      themeMode: ThemeMode.system,
+      theme: MyTheme.light(context),
+      darkTheme: MyTheme.dark(context),
       routes: {
         "/": (context) => HomePage(),
         MyRoutes.settingRoute: (context) => SettingPage(),

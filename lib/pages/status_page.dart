@@ -7,14 +7,19 @@ class StatusPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Theme.of(context).backgroundColor,
       appBar: AppBar(
-        iconTheme: IconThemeData(color: Colors.white),
+        iconTheme: IconThemeData(
+          color: Theme.of(context).accentColor,
+        ),
         title: Text(
           "SafetyNet",
-          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+          style: TextStyle(
+              color: Theme.of(context).accentColor,
+              fontWeight: FontWeight.bold,
+              fontFamily: 'Avenir'),
         ),
-        backgroundColor: Colors.grey.shade900,
+        backgroundColor: Theme.of(context).backgroundColor,
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -35,10 +40,11 @@ class StatusPage extends StatelessWidget {
                     child: Text(
                       "Success!",
                       style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'Avenir',
-                          fontSize: 35,
-                          fontWeight: FontWeight.bold),
+                        color: Colors.white,
+                        fontFamily: 'Avenir',
+                        fontSize: 35,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                   Text(

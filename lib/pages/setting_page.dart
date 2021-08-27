@@ -6,14 +6,19 @@ class SettingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Theme.of(context).backgroundColor,
       appBar: AppBar(
-        iconTheme: IconThemeData(color: Colors.white),
+        iconTheme: IconThemeData(
+          color: Theme.of(context).accentColor,
+        ),
         title: Text(
           "Settings",
-          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+          style: TextStyle(
+              color: Theme.of(context).accentColor,
+              fontWeight: FontWeight.bold,
+              fontFamily: 'Avenir'),
         ),
-        backgroundColor: Colors.grey.shade900,
+        backgroundColor: Theme.of(context).backgroundColor,
       ),
       body: Container(
         alignment: Alignment.center,
@@ -27,6 +32,7 @@ class SettingPage extends StatelessWidget {
                 child: Text(
                   "Customization",
                   style: TextStyle(
+                      fontFamily: 'Avenir',
                       color: Colors.blue,
                       fontWeight: FontWeight.bold,
                       fontSize: 25),
@@ -37,7 +43,7 @@ class SettingPage extends StatelessWidget {
               height: MediaQuery.of(context).size.height * 0.078,
               width: MediaQuery.of(context).size.width * 0.9,
               decoration: BoxDecoration(
-                color: Colors.grey.shade900,
+                color: Theme.of(context).cardColor,
                 borderRadius: BorderRadius.circular(10.0),
               ),
               child: Row(
@@ -46,7 +52,7 @@ class SettingPage extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 20, right: 15),
                     child: Icon(
                       Icons.brush,
-                      color: Colors.white,
+                      color: Theme.of(context).accentColor,
                       size: 25,
                     ),
                   ),
@@ -55,7 +61,8 @@ class SettingPage extends StatelessWidget {
                     child: Text(
                       "Themes",
                       style: TextStyle(
-                          color: Colors.white,
+                          color: Theme.of(context).accentColor,
+                          fontFamily: 'Avenir',
                           fontWeight: FontWeight.bold,
                           fontSize: 16),
                     ),
@@ -70,7 +77,7 @@ class SettingPage extends StatelessWidget {
                 height: MediaQuery.of(context).size.height * 0.078,
                 width: MediaQuery.of(context).size.width * 0.9,
                 decoration: BoxDecoration(
-                  color: Colors.grey.shade900,
+                  color: Theme.of(context).cardColor,
                   borderRadius: BorderRadius.circular(10.0),
                 ),
                 child: Column(
@@ -81,7 +88,8 @@ class SettingPage extends StatelessWidget {
                       child: Text(
                         "Language (System Default)",
                         style: TextStyle(
-                            color: Colors.white,
+                            color: Theme.of(context).accentColor,
+                            fontFamily: 'Avenir',
                             fontWeight: FontWeight.bold,
                             fontSize: 16),
                       ),
@@ -96,6 +104,7 @@ class SettingPage extends StatelessWidget {
                   "Manager",
                   style: TextStyle(
                       color: Colors.blue,
+                      fontFamily: 'Avenir',
                       fontWeight: FontWeight.bold,
                       fontSize: 16),
                 ),
@@ -107,7 +116,7 @@ class SettingPage extends StatelessWidget {
                   height: MediaQuery.of(context).size.height * 0.078,
                   width: MediaQuery.of(context).size.width * 0.9,
                   decoration: BoxDecoration(
-                    color: Colors.grey.shade900,
+                    color: Theme.of(context).cardColor,
                     borderRadius: BorderRadius.circular(10.0),
                   ),
                   child: Padding(
@@ -115,7 +124,8 @@ class SettingPage extends StatelessWidget {
                     child: Text(
                       "Update Channel (Beta)",
                       style: TextStyle(
-                          color: Colors.white,
+                          color: Theme.of(context).accentColor,
+                          fontFamily: 'Avenir',
                           fontWeight: FontWeight.bold,
                           fontSize: 16),
                     ),
@@ -128,7 +138,7 @@ class SettingPage extends StatelessWidget {
                   height: MediaQuery.of(context).size.height * 0.078,
                   width: MediaQuery.of(context).size.width * 0.9,
                   decoration: BoxDecoration(
-                    color: Colors.grey.shade900,
+                    color: Theme.of(context).cardColor,
                     borderRadius: BorderRadius.circular(10.0),
                   ),
                   child: Padding(
@@ -136,9 +146,10 @@ class SettingPage extends StatelessWidget {
                     child: Text(
                       "Custom Channel",
                       style: TextStyle(
-                          color: Colors.white,
+                          color: Theme.of(context).accentColor,
                           fontWeight: FontWeight.bold,
-                          fontSize: 16),
+                          fontSize: 16,
+                          fontFamily: 'Avenir'),
                     ),
                   ),
                 ),
@@ -149,7 +160,7 @@ class SettingPage extends StatelessWidget {
                   height: MediaQuery.of(context).size.height * 0.078,
                   width: MediaQuery.of(context).size.width * 0.9,
                   decoration: BoxDecoration(
-                    color: Colors.grey.shade900,
+                    color: Theme.of(context).cardColor,
                     borderRadius: BorderRadius.circular(10.0),
                   ),
                   child: Padding(
@@ -157,9 +168,10 @@ class SettingPage extends StatelessWidget {
                     child: Text(
                       "DNS over HTTPS",
                       style: TextStyle(
-                          color: Colors.white,
+                          color: Theme.of(context).accentColor,
                           fontWeight: FontWeight.bold,
-                          fontSize: 16),
+                          fontSize: 16,
+                          fontFamily: 'Avenir'),
                     ),
                   ),
                 ),
@@ -170,7 +182,7 @@ class SettingPage extends StatelessWidget {
                   height: MediaQuery.of(context).size.height * 0.078,
                   width: MediaQuery.of(context).size.width * 0.9,
                   decoration: BoxDecoration(
-                    color: Colors.grey.shade900,
+                    color: Theme.of(context).cardColor,
                     borderRadius: BorderRadius.circular(10.0),
                   ),
                   child: Padding(
@@ -178,9 +190,10 @@ class SettingPage extends StatelessWidget {
                     child: Text(
                       "Check Updates",
                       style: TextStyle(
-                          color: Colors.white,
+                          color: Theme.of(context).accentColor,
                           fontWeight: FontWeight.bold,
-                          fontSize: 16),
+                          fontSize: 16,
+                          fontFamily: 'Avenir'),
                     ),
                   ),
                 ),
@@ -191,7 +204,7 @@ class SettingPage extends StatelessWidget {
                   height: MediaQuery.of(context).size.height * 0.078,
                   width: MediaQuery.of(context).size.width * 0.9,
                   decoration: BoxDecoration(
-                    color: Colors.grey.shade900,
+                    color: Theme.of(context).cardColor,
                     borderRadius: BorderRadius.circular(10.0),
                   ),
                   child: Padding(
@@ -199,9 +212,10 @@ class SettingPage extends StatelessWidget {
                     child: Text(
                       "Download Path",
                       style: TextStyle(
-                          color: Colors.white,
+                          color: Theme.of(context).accentColor,
                           fontWeight: FontWeight.bold,
-                          fontSize: 16),
+                          fontSize: 16,
+                          fontFamily: 'Avenir'),
                     ),
                   ),
                 ),
