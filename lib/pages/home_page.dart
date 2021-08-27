@@ -392,6 +392,22 @@ class _HomePageState extends State<HomePage> {
                             fontWeight: FontWeight.bold,
                             fontSize: 14),
                       ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(right: 30),
+                        child: Container(
+                          alignment: Alignment.topRight,
+                          child: Text(
+                            "By @abhixv",
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20),
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
