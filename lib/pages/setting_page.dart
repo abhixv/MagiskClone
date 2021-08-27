@@ -47,7 +47,7 @@ class SettingPage extends StatelessWidget {
                     child: Icon(
                       Icons.brush,
                       color: Colors.white,
-                      size: 28,
+                      size: 25,
                     ),
                   ),
                   InkWell(
@@ -57,7 +57,7 @@ class SettingPage extends StatelessWidget {
                       style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
-                          fontSize: 18),
+                          fontSize: 16),
                     ),
                   ),
                 ],
@@ -83,7 +83,7 @@ class SettingPage extends StatelessWidget {
                         style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
-                            fontSize: 18),
+                            fontSize: 16),
                       ),
                     ),
                   ],
@@ -97,7 +97,7 @@ class SettingPage extends StatelessWidget {
                   style: TextStyle(
                       color: Colors.blue,
                       fontWeight: FontWeight.bold,
-                      fontSize: 25),
+                      fontSize: 16),
                 ),
               ),
             ),
@@ -117,7 +117,7 @@ class SettingPage extends StatelessWidget {
                       style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
-                          fontSize: 18),
+                          fontSize: 16),
                     ),
                   ),
                 ),
@@ -138,7 +138,7 @@ class SettingPage extends StatelessWidget {
                       style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
-                          fontSize: 18),
+                          fontSize: 16),
                     ),
                   ),
                 ),
@@ -159,7 +159,7 @@ class SettingPage extends StatelessWidget {
                       style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
-                          fontSize: 18),
+                          fontSize: 16),
                     ),
                   ),
                 ),
@@ -180,7 +180,7 @@ class SettingPage extends StatelessWidget {
                       style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
-                          fontSize: 18),
+                          fontSize: 16),
                     ),
                   ),
                 ),
@@ -201,7 +201,7 @@ class SettingPage extends StatelessWidget {
                       style: TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
-                          fontSize: 18),
+                          fontSize: 16),
                     ),
                   ),
                 ),

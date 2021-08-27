@@ -3,6 +3,7 @@ import 'dart:ffi';
 import 'package:flutter/material.dart';
 import 'package:magisk/pages/home_page.dart';
 import 'package:magisk/pages/setting_page.dart';
+import 'package:magisk/pages/status_page.dart';
 import 'package:magisk/utils/routes.dart';
 
 void main() {
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "/": (context) => HomePage(),
         MyRoutes.settingRoute: (context) => SettingPage(),
+        MyRoutes.statusRoute: (context) => StatusPage(),
       },
     );
   }

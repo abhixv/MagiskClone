@@ -321,7 +321,9 @@ class _HomePageState extends State<HomePage> {
                   borderRadius: BorderRadius.circular(10.0),
                 ),
                 child: InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, MyRoutes.statusRoute);
+                  },
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
